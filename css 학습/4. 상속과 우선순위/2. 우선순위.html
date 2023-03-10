@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+            color: blue /*!important*/;
+        }
+        #c-y{
+            color: yellow;
+        }
+        .c-g{
+            color:green;
+        }
+        body{
+            color: aqua;
+        }
+        div{
+            color: red;
+        }
+
+        h1{
+            color: lightblue;
+        }
+        .bbb h1{
+            color: orangered;
+        }
+        #aaa h1{
+            color: gray;
+        }
+        #aaa div.bbb h1{
+            color: greenyellow;
+            
+        }
+        #aaa .bbb h1{
+            color: azure;
+        }
+        div .bbb>h1 {
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+    
+    <div 
+        id="c-y" 
+            class="c-g" 
+            style="color: orange;"
+            >안녕하세요1</div>
+
+            <div 
+            id="c-y" 
+                class="c-g" 
+                >안녕하세요2</div>
+
+                <div 
+                class="c-g" 
+                >안녕하세요3</div>
+
+                <!-- 점수가 같은 경우 마지막에 작성한 게 적용이됨 -->
+                <div 
+                >안녕하세요4</div>
+
+                <!-- p태그는 body에 대한 상속으로 아쿠아가 적용 -->
+                <p>안녕하세요5</p>
+
+                <hr>
+
+                <div id="aaa">
+                    <div class="bbb">
+                        <h1>안녕하세요6</h1>
+                    </div>
+                </div>
+
+</body>
+</html>
+
+
+

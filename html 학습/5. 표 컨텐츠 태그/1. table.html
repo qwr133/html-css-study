@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        tr,
+        td {
+            border: 1px solid gray;
+            text-align: center;
+            padding: 7px;
+        }
+
+        th { 
+            /* 테이블해더라는 의미로 첫 행은 th로 하는게 좋음 */
+            background: lightslategray;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 3x4 표 생성 -->
+    <!-- table>tbody>tr*3>td*4 -->
+    <table>
+        <tbody>
+            <tr>
+                <th colspan="5">인적사항</th>
+            </tr>
+            <tr>
+                <th>이름</th>
+                <th>나이</th>
+                <th>주소</th>
+                <th>전화번호</th>
+                <th>비고</th>
+            </tr>
+            <tr>
+                <td>홍철수</td>
+                <td>30세</td>
+                <td>서울시 강남구</td>
+                <td>1234-5678</td>
+                <td rowspan="2">없음</td>
+            </tr>
+            <tr>
+                <td>박영희</td>
+                <td>29세</td>
+                <td>서울시 성동구</td>
+                <td>4575-8743</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+
+</html>

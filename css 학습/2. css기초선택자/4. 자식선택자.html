@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*바로 직속 자식을 선택함*/
+        /*맨 뒤가 타겟, 앞에는 조건 
+        ul의 자식인 클래스 오렌지 >(자식) */
+
+        ul > .orange{
+            background: orange;
+        }
+
+        body > div > ul> li.reverse{ 
+            color: red; 
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class="yellow low primary" id="change">안녕하세요</h1>
+    <div>
+        <ul>
+            <li class="reverse center" id="apple">사과</li>
+            <li>포도</li>
+            <li class="orange reverse">오렌지</li>
+        </ul>
+
+        <div>당근</div>
+        <p id="tomato">토마토</p>
+        <span class="orange">오렌지</span>
+
+    </div>
+</body>
+</html>

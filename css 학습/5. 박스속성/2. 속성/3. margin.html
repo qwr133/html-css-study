@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 400px;
+            height: 300px;
+            border: 4px solid red;
+
+            margin-left: 50px;
+            margin-top: 100px;
+        }
+
+        .box{
+            width: 25%; /*부모가 400이니까 25면 100px */
+            height: 100px;
+            border: 4px solid gray;
+            background: #333;
+        }
+        .box:first-child{
+            margin-left: 30px;
+            margin-bottom: 30px;
+        }
+        .box:last-child{
+            /* 좌우 마진을 오토로 설정하면 박스가 x축 중앙정렬됨 */
+            /* margin-left: auto;
+            margin-right: auto;     */
+            
+            margin: 0 auto;
+        }
+
+        .item{
+            width: 200px;
+            height: 200px;
+            background: skyblue;
+            margin: 20px; /*상하좌우 20픽셀씩 각각 적용*/
+            margin: 30px 50px; /*상하 30, 좌우 50*/
+            margin: 40px 50px 60px; /*상, 좌우, 하 순*/
+            margin: 10px 20px 30px 40px; /*상 우 하 좌 (시계방향)*/
+
+        }
+
+        section {
+            background: violet;
+        }
+        .text{
+            /* text-align: 박스안에서의 텍스트 중앙정렬
+            margin 0 auto 는 부모박스 안에서 자식박스의 x축 중앙정렬
+            필수적으로 자식의 가로가 부모보다 작아야 여유마진을 분배할 수 있음;
+            박스와 텍스트는 다른요소(인라인과 블록요소) */
+            width: fit-content;
+            /* border: 2px solid orange;  */
+            margin: 50% auto;
+            
+            
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <div class="text">하하호호</div>
+    </section>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="item"></div>
+</body>
+</html>

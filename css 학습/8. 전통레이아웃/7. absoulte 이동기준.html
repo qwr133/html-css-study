@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        .root{
+            width: 600px;
+            height: 500px;
+            border: 4px dashed orange;
+            padding: 100px;
+            font-size: 30px;
+        }
+
+        .parent{
+            width: 400px;
+            height: 300px;
+            border: 4px dashed blue;
+            padding: 50px;
+
+        }
+        
+        .child{
+            width: 120px;
+            height: 80px;
+            border: 4px dashed red;
+            background: tomato;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 80px;
+
+
+        }
+
+        .abs{
+            position: absolute;
+            top: 50px;
+            left: 30px;
+        }
+        .center{
+        position: absoulte;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);  
+    }
+     </style>
+</head>
+<body>
+    
+    <div class="root">
+        <div class="parent abs">
+            <div class="child abs">1</div>
+            <div class="child ">2</div>
+            <div class="child">3</div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- a태그 경우 인라인 속성이라 w,h 설정해도 이동하지 않음
+하지만 인라인 속성의 태그는 position absolute나 float 속성이 부여되면 자동으로 block 성질로 변환됨 -->
+
+<!-- 박스 좌우 상하 정중앙 배치 공식 [외우기]
+    .center{
+        position: absoulte ;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    부모박스 정중앙에 바로 배치됨 
+    }
+-->

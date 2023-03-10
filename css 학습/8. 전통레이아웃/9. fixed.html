@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            height: 3000px;
+        }
+        header{
+            border-bottom: 2px solid gray;
+            /* fixed는 화면전체가 언제가 기준이 됨 --고정되어 붙어있게됨 */
+            position: fixed;
+            top: 0;
+            /* postion absoulte 하면 fit content가 고정이 되어 가로 길이 100% 기본값이 깨짐
+            그래서 width 100%를 꼭 명시해야함 */
+            width: 100%
+        }
+        header h1 {
+            margin: 20px 20px 30px;
+            font-size: 40px;
+            float: left;
+            padding: 0px;
+
+        }
+        header nav{
+            float: right;
+        }
+        header nav ul{
+            margin-top: 30px;
+            padding: 0;
+
+        }
+        header nav ul li{
+            float: left;
+            margin-right: 30px;
+            font-size: 1.5em;
+            font-weight: bold;
+            list-style: none;
+        }
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header class="clearfix">
+        <h1>my home</h1>
+        <nav>
+            <ul>
+            <li>소개</li>
+            <li>커뮤니티</li>
+            <li>자료실</li>
+            <li>회원가입</li>
+        </ul>
+        </nav>
+    </header>
+</body>
+</html>

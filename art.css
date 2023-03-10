@@ -1,0 +1,46 @@
+
+@import url(../common.css);
+/* base layout*/
+body{
+    font-size: 14px;
+    font-family: Ngothic, sans-serif;
+    background: #aaa;
+
+
+}
+
+#wrapper{
+    width: 60%;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.container .banner .link {
+    /* background: tomato; */
+    padding: 0 10px;
+}
+
+.container .banner .link li {
+    margin-bottom: 15px;
+}
+.container .banner .link li a {
+    display: block;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    width: fit-content;    
+}
+.container .banner .link li span {
+    font-weight: 400;
+}
+
+/* footer style */
+footer {
+    background: #123456;
+    padding: 10px;
+    font-weight: 700;
+    color: #eee;
+    text-align: center;
+}
+footer a {
+    text-decoration: underline;
+} 

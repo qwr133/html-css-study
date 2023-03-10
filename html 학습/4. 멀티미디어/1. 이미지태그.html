@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            /* 이미지는 가로세로 중 한쪽만 바꿔도 나머지 부분은 비율적 조정이 됨 */
+            width: 200px;
+            /* 인라인의 속성을 가지면서 가로세로길이가 조절됨 input과 img과 인라인블록속성을 가지고 있음 */
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    
+    <img src="https://antitifragile.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F1cc32322-9b3e-4077-8bd6-a9ca67a410f3%2Fbasic.jpg?id=97a66799-3075-4f10-830d-735f456a38fa&table=block&spaceId=f012a535-69c8-419b-a38f-60b92004df0d&width=1000&userId=&cache=v2" 
+    alt="귀여운 송아지 사진">
+    <img src="https://antitifragile.notion.site/image/https%3A%2F%2Fs3-us-west-.amazonaws.com%2Fsecure.notion-static.com%2F1cc32322-9b3e-4077-8bd6-a9ca67a410f3%2Fbasic.jpg?id=97a66799-3075-4f10-830d-735f456a38fa&table=block&spaceId=f012a535-69c8-419b-a38f-60b92004df0d&width=1000&userId=&cache=v2" 
+    alt="송아지 사진">
+    <!-- 사진 링크가 에러가 났을 때 alt 속성에 적어둔 내용이 나옴 (있는 이유: 시각장애인용) -->
+
+    <a href="http://www.naver.com">
+        <img src="https://antitifragile.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F1cc32322-9b3e-4077-8bd6-a9ca67a410f3%2Fbasic.jpg?id=97a66799-3075-4f10-830d-735f456a38fa&table=block&spaceId=f012a535-69c8-419b-a38f-60b92004df0d&width=1000&userId=&cache=v2"
+         alt="송아지링크">
+         <!-- 사진 클릭하면 네이버 페이지로 이동 -->
+    </a>
+</body>
+</html>

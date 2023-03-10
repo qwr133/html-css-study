@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* hover: 요소에 마우스를 올렸을 때 적용 */
+        a:hover {
+            font-size: 20px;
+            font-weight: 700;
+            color: red;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background: orange;
+            transition: 0.7s;
+        }
+
+        .box:hover {
+            width: 200px;
+            background: red;
+        }
+
+        /* active: 마우스를 누르고있는 동안에 */
+        .box:active {
+            height: 200px;
+            background: yellowgreen;
+        }
+
+        /* focus: 요소에 포커싱 (탭, 입력창 클릭) */
+        #common {
+            width: 100px;
+            outline: none;
+            padding: 5px;
+            margin-top: 20px;
+            transition: 0.6s;
+        }
+        #common:focus {
+            border-color: red;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <a href="#">Hello!</a>
+
+    <div class="box"></div>
+
+    <input type="text" id="common">
+
+</body>
+</html>
+

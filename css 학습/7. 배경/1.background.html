@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box{
+            width: 550px;
+            height: 350px;
+            border: 4px dashed gray;
+            margin: 50px auto 0;
+
+            /* 배경속성 */
+            background-color: orange;
+            /* bgi=> 넘치는 부분은 알아서 overflow hidden 을 한다 
+                바디에 <img ~~ url 해서 입력해서 스타일에 overflow:hidden 하면됨  */
+            background-image: url(../../img/sky.jpg);
+            /*              width  height */
+            background-size: 80px 80px;
+            /* background-size의 값이 반복적으로 되지 않게 하는 속성; */
+            background-repeat: no-repeat;
+            /*  이미지 위치이동  x축 y축 */
+            background-position: 30px 100px;
+            /* background-position: right top; -이렇게 설정도 가능함 */
+            background: url('../../img/sky.jpg') orange no-repeat 150px 100px / 20px 100px;
+                                                                 /* position    /  size 순 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    
+    
+</body>
+</html>

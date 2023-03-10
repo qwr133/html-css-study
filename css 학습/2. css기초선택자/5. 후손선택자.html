@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*바로 직속 후손을 선택함*/
+        /*맨 뒤가 타겟, 앞에는 조건  //꺽세를 사용하지 않고 띄어쓰기로 */
+
+        div .orange { /*타겟은 오렌지, div의 후손이면 가능함 (손자, 직속 둘다 포함)*/
+            background: orange;
+        }
+
+        body #tomato{ /*body#tomato 는 <body id=tomato>여야함*/
+            background: tomato;
+        }
+
+        .wrap div{
+            resize: 1.5em;
+            color: orangered;
+        }
+
+    </style>
+</head>
+<body >
+    
+    <h1 class="yellow low primary" id="change">안녕하세요</h1>
+    <div class="wrap">
+        <ul>
+            <li class="reverse center" id="apple">사과</li>
+            <li>포도</li>
+            <li class="orange reverse">오렌지</li>
+        </ul>
+
+        <div>당근</div>
+        <p id="tomato">토마토</p>
+        <span class="orange">오렌지</span>
+
+    </div>
+</body>
+</html>

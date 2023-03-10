@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="#">
+
+        이름 : <input type="text" value="이름을 입력하세요" readonly> <br>
+        패스워드: <input type="password"> <br>
+        이메일: <input type="email" placeholder="aaa@bbb.com"> <br>
+
+        취미 : 
+        <input type="checkbox"> 게임
+        <input type="checkbox" checked> 축구
+        <input type="checkbox" disabled> 넷플릭스 <br>
+        
+        #메일 수신여부
+        <input type="radio" name="mail"> 예
+        <input type="radio" name="mail"> 아니요 <br>
+     
+        #주문 수량 :
+        <input type="number" max="10" value="1">
+        <input type="range" min="0" max="5" value="3">
+
+        # 파일:
+        <input type="file" multiple> <br>
+        
+        <!-- 사용자 몰래 서버로 보내야하는 데이터 -- 로그인 위주가 한국인이면 광고가 한국어 관련으로 뜸 -->
+        <input type="hidden" name="nickname" value="바보">
+        <button>확인</button>
+        <!-- 확인 클릭후 사이트 링크보면 바보 값이 있음 -->
+        <br>
+        <button type="button">그냥 버튼</button>
+        <button type="reset">입력값 초기화버튼</button>
+        <button type="submit">서버전송버튼</button>
+        <br>
+        <input type="button" value="input버튼">
+    <!-- 가능은 하지만 html5에서부터 잘 사용하지 않음// 버튼태그 안에 이미지도 넣을 수 있음 -->
+    </form>
+</body>
+</html>

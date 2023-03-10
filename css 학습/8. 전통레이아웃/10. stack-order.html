@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 80%;
+            margin: 50px auto 0;
+
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            border: 4px dashed red;
+            border-radius: 15px;
+            font-size: 2em;
+            text-align: center;
+            line-height: 100px;
+
+            float: left;
+            box-shadow: 2px 2px 20px #222;
+            margin-right: -30px;
+            position: relative; <!--요소쌓임순서 3번-- 순서대로 쌓임-->
+        }
+        .box:nth-child(2n){
+            margin-top: 30px;
+        }
+        .box1{
+            left: 280px;
+
+        }
+        .box4{ 
+            /* position: relative; 요소 쌓임 순서 1번, -1 작성시 맨 밑으로 이동 됨 */
+            z-index: 1;
+        }
+        .box3{
+            z-index: 1; /*눈으론 그대로 보이지만 3d로 보일 때는 5보다 앞에 있음 -- 4 3 5 2 1 순*/
+        }
+        .box5{
+            right:100px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- .container>.box.box${$}*5 -->
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div> 
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            /* 액자 400px 300 */
+            width: 400px;
+            height: 300px;
+            border: 2px solid red;
+            margin: 50px auto 0;
+
+            /* 이미지 600 x 400 */
+            background-image: url('../../img/tulip.jpg');
+            background-repeat: no-repeat;
+            /* cover 크기의 손실을 최대한 맞추는것, contain은 손실을 아예 없지만 빈공간이 생길 수 있음
+                포토샵으로 액자사이즈를 미리 조정시키는게 베스트, 나혼자 업무할땐 그냥 cover가 나음 */
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

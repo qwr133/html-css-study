@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .parent{
+            width: 800px;
+            height: 300px;
+            background: skyblue;
+        }
+        
+        .child{
+            /* width: 100%; */
+            height: 200px;
+            background: orange;
+            /* parent에서 width 800px 설정시 차일드는 500까지 하겠다는 의미 */
+            max-width: 500px;
+            min-width: 200px;
+            /* 2~500사이는 같이 따라가다가 이하 또는 이상이면 양보안하고 고정이 됨 */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+</html>

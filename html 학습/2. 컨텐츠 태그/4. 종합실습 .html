@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="../../common.css"> <!--css reset-->
+    <style>
+        .container{
+            /* background: orange; */
+            width: 85%;
+            margin: 0 auto;
+            
+        }
+
+        .container header{
+            /* border: 4px solid red; */
+            border-bottom: 5px solid gray;
+            padding: 15px 10px;
+
+            height: 100px;
+            line-height: 100px;
+        }
+
+        .container header h1{
+            /* background: skyblue; */
+            float: left;
+            font-weight: bold;
+            font-size: 1.5em;
+            margin-left: 10px;
+        }
+        .container header nav{
+            /* background: violet; */
+            /* 두개가  있을 땐 한쪽은 left, 다른한쪽은 right */
+            float: right; 
+        }
+        .container header nav li {
+            /* border: 3px solid #000; */
+            float: left;
+            margin-right: 15px;
+        }
+
+
+        .container .main{
+            border: 3px solid lightgray;
+            margin: 40px 0 60px;
+
+            padding: 40px 35px;            
+        }
+        .container .main h2{
+            background: aqual;
+            margin-bottom: 15px;
+            border-bottom:  3px dashed red;
+            padding-bottom: 5px;
+            
+            font-weight: bold;
+            font-size: 1.8rm;
+
+        }
+
+        .container .main .article-list{
+            /* background: orange; */
+            float: clear;
+        }
+
+        .container .main .article-list article{
+            border: 2px solid blue;
+            
+            height: 250px;
+            float: left;
+
+            padding: 40px;
+            width:29.3%;
+            margin-right: 3%;
+        }
+        .container .main .article-list article:first-child(){
+            margin-left: 3%;
+            } 
+        .container .main .article-list article:last-child(){
+            margin-left: 5px;
+            }
+
+        
+
+        .container .main .article-list article h3{
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-size: 1.3em;
+            }
+
+            .container .main .article-list article p {
+                background: aqua;
+            }    
+        .container footer{
+            border: 4px solid green;
+        }
+        aside{
+            width: 80px;
+            height: 600px;
+            background: orange;
+
+            position: absolute;
+            right: 10px;
+            top: 50px;
+            
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>로고</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">메뉴1</a></li>
+                    <li><a href="#">메뉴2</a></li>
+                    <li><a href="#">메뉴3</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="main">
+            <h2>section</h2>
+            <div class="article-list clearfix">
+                <article>
+                    <h3>article1</h3>
+                    <p>내용 블라블라~~</p>
+                </article>
+                <article>
+                    <h3>article2</h3>
+                    <p>내용 블라블라~~</p>
+                </article>
+                <article>
+                    <h3>article3</h3>
+                    <p>내용 블라블라~~</p>
+                </article>
+            </div>
+        </section>
+
+        <footer>
+            <div class="contact">
+                <div class="email">
+                    <a href="#">이메일전송</a>
+                </div>
+                <div class="phone">
+                    <a href="#">전화걸기</a>
+                </div>
+            </div>
+        </footer>
+
+        <aside>
+            <img src="" alt="">
+        </aside>
+    </div>
+
+
+</body>
+
+</html>

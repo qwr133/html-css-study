@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header id="github-link">깃허브로 이동</header>
+
+    <a href="https://www.naver.com/">네이버 링크</a>
+    <a href="https://www.google.com/?hl=ko" target="_blank">구글 링크</a>
+
+    <a href="../2. 컨텐츠 태그/2. 목록태그.html">목록태그 페이지</a>
+    <!-- 로컬경로를 지정할 때는 상대경로로 작성해야함 (절대경로 작성 시 not allowed) -->
+
+    <a href="tel:+820115451211">문의전화</a>
+    <a href="mailto:ksg1650@naver.com">메일문의</a>
+
+    <div id="top">
+        <h1>안녕하세요</h1>
+        <p style="height: 2000px;">헬로헬로</p>
+    </div>
+
+    <a href="#top">맨위로 이동</a>
+
+    <script>
+        const $spanLink = document.getElementById('github-link');
+        $spanLink.onclick= e => {
+            window.location.href='http://github.com'
+        }
+    </script>
+
+</body>
+</html>
+
+<!-- alt shift 아래방향키 - 복사 -->

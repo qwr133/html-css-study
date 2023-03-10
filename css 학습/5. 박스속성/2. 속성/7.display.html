@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #hello{
+            background: red;
+            width: 200px;
+            height: 200px;
+            display: block; /*width, height 크기 조절이 가능함*/
+        }
+
+        .box{
+            margin-top: 50px;
+        }
+        .box input{
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+        }
+        .box input:nth-child(3){
+            display: none;
+            /* opacity: 0; */
+        }
+    </style>
+</head>
+<body>
+    
+    <span id="hello">안녕하세요</span>
+
+    <div class="box">
+        <input type="text" value="1">
+        <input type="text" value="2">
+        <input type="text" value="3">
+        <input type="text" value="4">
+        <input type="text" value="5">
+    </div>
+
+    <script>
+        hello.onclick = e => {
+            hello.style.display = 'none'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .orange + li{ /*li이면서 형이 orange인 사람 // 잘 사용하지 않음*/
+            color: orangered;
+        }
+
+        li + li { /*li 이면서 형님이 li이여야함 // 테이블 만들때 용이함(tr +tr 식으로 사용하면 됨)*/
+            font-size: 24px;
+        }
+        /*일반 형제 선택자*/
+        .red ~ li { /*형들 중에 class red가 있으면 모두 컬러가 변함*/
+            background: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="orange">어린쥐</li>
+        <li>사과</li>
+        <li>딸기</li>
+        <li class="orange">오렌지</li>
+        <li class="red">자몽</li>
+        <li>포도</li>
+        <li>샤인머스캣</li>
+        <li>한라봉</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: gray;
+        }
+        
+        .box{
+            background: orange; 
+            /* 높이가 0이기 때문에 height를 따로 설정해줘야함
+            width 부모대비 70%임 */
+            width: 70%;
+            padding: 50px;
+        }
+        .box{
+            background: greenyellow;
+            /* width: auto; 부모의 것을 상속 */
+            height: 100px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <div class="box2"></div>
+    </div>
+    
+</body>
+</html>

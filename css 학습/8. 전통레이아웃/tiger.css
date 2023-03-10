@@ -1,0 +1,97 @@
+@import url('../../common.css');
+
+
+body {
+    width: 1000px;
+    height: 900px;
+    background: rgb(255, 255, 255);
+    margin: 100px;
+    padding: 0;
+}
+/* begin head style*/
+header h1 {
+    width: 1000px;
+    height: 130px;
+    background: #143654;
+    color: #CBC937;
+    font-size: 1.7em;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+    font-family: '휴먼모음T', cursive;
+
+}
+
+header h1 strong {
+    font-size: 3.0em;
+    color: white;
+}
+
+header h1 span {
+    font-size: 1.5em;
+}
+
+header h1 em {
+    font-size: 1.8em;
+    color: #C9C9C9;
+}
+/* end head style*/
+
+/* begin continer style*/
+.menu {
+    width: 180px;
+    height: 600px;
+    background: lightgray;
+    float: left;
+}
+
+.menu li {
+    text-indent: 30px;
+    font-size: 16px;
+    padding-top: 30px;
+    text-decoration: underline;
+
+}
+
+
+.content h2 {
+    width: 1000px;
+    height: 50px;
+    background: rgb(131, 39, 39);
+    font-family: cursive;
+    color: #EEEC43;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px 100px;
+    text-indent: 20px;
+
+}
+
+.content p {
+    /* border: 4px solid #000; */
+    width: 1000px;
+    height: fit-content;
+    /* background: rgb(175, 183, 185); */
+    font-size: 15px;
+    line-height: 30px;
+    text-align: justify;
+    padding-left: 200px;
+    margin-top: 20px;
+}
+
+.content p:nth-child(2) {
+    margin-bottom: 30px
+}
+/* end container style*/
+
+/* begin footer style*/
+footer address {
+    width: 1000px;
+    height: 50px;
+    background: darkgrey;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 15px;
+
+}

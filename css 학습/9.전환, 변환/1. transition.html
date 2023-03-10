@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin: 50px;
+
+            transition-property: width; /*속성 입력, 가로길이가 늘어가는것에대해 에니메이션을 주겠다*/
+            transition-duration: 1s; /*시간 입력*/
+
+            transition-property: all; /*속성 입력, 색깔과 가로길이가 1초에 걸쳐서 바뀜/
+            transition-duration: 1s; /*시간 입력*/
+
+            transition-property: width, background; /*, 가로길이와 색깔이 1초와 2초에 걸쳐서 바뀜 */
+            transition-duration: 1s, 2s; /*시간 입력*/
+            /* transition-delay: 1s; hover하고 1초뒤에 효과가 나타남 */
+
+            transition-timing-function: linear; /*균일하게 설정 시간에 맞춰 바뀜, 기본값 ease은 처음엔 빠르다가 갈수록 느려짐*/
+
+            /* transition: all 1s 2s linear; 모든걸 1초에 걸쳐서 진행하는데 2초를 딜레이하고 균일한 속도로 주겠다 //보통은 초만 작성 */
+        }
+        
+        .box:hover{
+            width: 300px;
+            background: skyblue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+    
+</body>
+</html>
